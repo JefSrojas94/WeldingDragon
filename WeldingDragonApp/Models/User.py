@@ -37,5 +37,3 @@ class User (AbstractBaseUser,PermissionsMixin):
         
     obejects = UserManager()
     USERNAME_FIELD = 'Username'
-        
-    
