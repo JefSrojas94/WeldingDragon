@@ -1,14 +1,14 @@
 from rest_framework import serializers
-from WeldingDragonApp.Models.User import User 
+from WeldingDragonApp.Models import User 
+
 
 class UserSerializer(serializers.ModelSerializer):
   
     class Meta:
         model = User
-        fields = ['id', 'username', 'nombre', 'apellido', 'cedula', 'correo', 'tipo_de_Cliente']
+        fields = ['id', 'username','password', 'nombre', 'apellido', 'cedula', 'correo', 'tipo_de_Cliente']
 
     def create(self, validated_data):
-        accountData = validated_data.pop('account')
         userInstance = User.objects.create(**validated_data)
         return userInstance
 
@@ -17,6 +17,7 @@ class UserSerializer(serializers.ModelSerializer):
         return {
             'id': user.id,
             'username': user.username,
+            'password':user.password,
             'nombre': user.nombre,
             'apellido': user.apellido,
             'cedula': user.cedula,
