@@ -72,6 +72,8 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTH_USER_MODEL = 'WeldingDragonApp.User'
+
 ROOT_URLCONF = 'weldApp.urls'
 
 TEMPLATES = [
