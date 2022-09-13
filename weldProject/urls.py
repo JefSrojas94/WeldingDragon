@@ -1,5 +1,5 @@
 from django.urls import path
-from WeldingDragonApp import views
+from weldingDragonApp import views
 from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView)
 
 urlpatterns = [

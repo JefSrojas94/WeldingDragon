@@ -2,8 +2,8 @@ from lib2to3.pgen2 import token
 from rest_framework import status, views
 from rest_framework.response import Response
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from WeldingDragonApp import serializers
-from WeldingDragonApp.serializers import UserSerializer
+from weldingDragonApp import serializers
+from weldingDragonApp.serializers import UserSerializer
 
 class UserCreateView(views.APIView):
 

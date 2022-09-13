@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'WeldingDragonApp',
+    'weldingDragonApp',
 ]
 
 SIMPLE_JWT = {
@@ -72,7 +72,7 @@ REST_FRAMEWORK = {
     )
 }
 
-AUTH_USER_MODEL = 'WeldingDragonApp.user'
+AUTH_USER_MODEL = 'weldingDragonApp.user'
 
 ROOT_URLCONF = 'weldProject.urls'
 

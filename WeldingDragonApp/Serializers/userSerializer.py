@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from WeldingDragonApp.models import User 
+from weldingDragonApp.models import User 
 
 
 class UserSerializer(serializers.ModelSerializer):
