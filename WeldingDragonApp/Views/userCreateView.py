@@ -3,7 +3,7 @@ from rest_framework import status, views
 from rest_framework.response import Response
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from WeldingDragonApp import Serializers
-from WeldingDragonApp.Serializers import UserSerializer
+from WeldingDragonApp.serializers import UserSerializer
 
 class UserCreateView(views.APIView):
 

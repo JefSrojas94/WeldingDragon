@@ -21,6 +21,7 @@ class UserManager(BaseUserManager):
     
 class User (AbstractBaseUser,PermissionsMixin):
     id = models.AutoField(primary_key=True)
+    tipo_de_usuario = models.CharField('Tipo de Usuario', max_length=30)
     username = models.CharField('Nombre de Usuario', max_length=30,unique=True)
     password = models.CharField('Password', max_length = 256)
     nombre = models.CharField('Nombre',max_length=30)

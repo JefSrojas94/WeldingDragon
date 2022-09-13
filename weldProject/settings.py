@@ -72,7 +72,7 @@ REST_FRAMEWORK = {
     )
 }
 
-AUTH_USER_MODEL = 'WeldingDragonApp.user'
+AUTH_USER_MODEL = 'WeldingDragonApp.User'
 
 ROOT_URLCONF = 'weldProject.urls'
 

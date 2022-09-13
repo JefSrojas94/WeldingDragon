@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.backends import TokenBackend
 from rest_framework.permissions import IsAuthenticated
 
-from WeldingDragonApp.Models import User
-from WeldingDragonApp.Serializers import UserSerializer
+from WeldingDragonApp.models import User
+from WeldingDragonApp.serializers import UserSerializer
 
 class UserDetailview(generics.RetrieveAPIView):
     queryset = User.objects.all()
